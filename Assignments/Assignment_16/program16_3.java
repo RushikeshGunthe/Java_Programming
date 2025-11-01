@@ -9,6 +9,18 @@ public class program16_3
 }
 class Logic
 {
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    /// 
+    /// Function name:  countDigits
+    /// Input:          Integer
+    /// Output:         None
+    /// Discription:    Accepts a number and prints factorials of it
+    /// Auther:         Rushikesh Vinod Gunthe
+    /// Date:           01/11/2025
+    ///  
+    ///////////////////////////////////////////////////////////////////////////////////
+    
     void findFactorial(int iNo)
     {
         int iCnt = 0;
