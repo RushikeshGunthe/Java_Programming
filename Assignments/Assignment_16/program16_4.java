@@ -9,6 +9,18 @@ public class program16_4
 }
 class Logic
 {
+
+    ///////////////////////////////////////////////////////////////////////////////////
+/// 
+/// Function name:  countDigits
+/// Input:          Integer
+/// Output:         None
+/// Discription:    Accepts a number and prints number in reverse
+/// Auther:         Rushikesh Vinod Gunthe
+/// Date:           01/11/2025
+///  
+///////////////////////////////////////////////////////////////////////////////////
+
     void reverseNumber(int iNo)
     {
         int iReversed = 0;
