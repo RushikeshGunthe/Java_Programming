@@ -1,5 +1,17 @@
 class Logic
 {
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    /// 
+    /// Function name:  countDigits
+    /// Input:          Integer
+    /// Output:         None
+    /// Discription:    Accepts a number and prints addition from 1 to given number
+    /// Auther:         Rushikesh Vinod Gunthe
+    /// Date:           01/11/2025
+    ///  
+    ///////////////////////////////////////////////////////////////////////////////////
+    
     void calculateSum(int iNo)
     {
         int iCnt = 0;
