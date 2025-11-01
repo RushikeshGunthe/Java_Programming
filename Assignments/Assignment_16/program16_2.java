@@ -9,6 +9,18 @@ public class program16_2
 }
 class Logic
 {
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    /// 
+    /// Function name:  countDigits
+    /// Input:          Integer
+    /// Output:         None
+    /// Discription:    Accepts a number and prints the number is even or odd
+    /// Auther:         Rushikesh Vinod Gunthe
+    /// Date:           01/11/2025
+    ///  
+    ///////////////////////////////////////////////////////////////////////////////////
+    
     void checkEvenOdd(int iNo)
     {
         if((iNo % 2) == 0)
