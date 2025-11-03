@@ -7,16 +7,16 @@ class program19_3 {
 
 class Logic {
 
-    ///////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
     ///
-    /// Function name: CheckDivisible
-    /// Input: Integer
-    /// Output: None
-    /// Discription: Accepts a number checks if the number is divisible by 5 and 11.
-    /// Auther: Rushikesh Vinod Gunthe
-    /// Date: 02/11/2025
+    /// Function name:  CheckDivisible
+    /// Input:          Integer
+    /// Output:         None
+    /// Discription:    Accepts a number checks if the number is divisible by 5 and 11.
+    /// Auther:         Rushikesh Vinod Gunthe
+    /// Date:           02/11/2025
     ///
-    ///////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
 
     void CheckDivisible(int iNo) 
     {
