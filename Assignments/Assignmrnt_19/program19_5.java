@@ -7,16 +7,16 @@ class program19_5 {
 
 class Logic {
 
-    ///////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
     ///
-    /// Function name: CalculatePower
-    /// Input: Integer, Integer
-    /// Output: None
-    /// Discription: Accepts a number and prints its power.
-    /// Auther: Rushikesh Vinod Gunthe
-    /// Date: 03/11/2025
+    /// Function name:  CalculatePower
+    /// Input:          Integer, Integer
+    /// Output:         None
+    /// Discription:    Accepts a number and prints its power.
+    /// Auther:         Rushikesh Vinod Gunthe
+    /// Date:           03/11/2025
     ///
-    ///////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
 
     void CalculatePower(int iBase, int iExp) 
     {
