@@ -7,7 +7,8 @@
 import java.util.*;
 
 
-class program23_2 {
+class program23_2 
+{
 
     public static void main(String args[]) 
     {
