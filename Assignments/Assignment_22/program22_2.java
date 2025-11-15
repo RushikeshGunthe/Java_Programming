@@ -7,7 +7,8 @@
 import java.util.Scanner;
 
 
-class program22_2 {
+class program22_2 
+{
 
     public static void main(String args[]) 
     {
