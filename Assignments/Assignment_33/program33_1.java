@@ -4,32 +4,37 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-// Input:   iRow = 4     iCol = 4
-// Output:  *   *   *   #
-//          *   *   #   *
-//          *   #   *   *
-//          #   *   *   *
+// Input:   char
+// Output:  Boolean
 // 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 import java.util.*;
 
 
-class program32_1
+class program33_1
 {
 
     public static void main(String args[]) 
     {
-        int iValue1 = 0, iValue2 = 0;
+        boolean bRet;
+        
         Scanner sobj = new Scanner(System.in);
 
-        System.out.println("Enter number of Rows: ");
-        iValue1 = sobj.nextInt();
+        System.out.println("Enter a character: ");
+        char ch = sobj.next().charAt(0);
         
-        System.out.println("Enter number of Columns: ");
-        iValue2 = sobj.nextInt();
-
         Pattern pobj = new Pattern();
-        pobj.Display(iValue1, iValue2);
+
+        bRet = pobj.ChkAlpha(ch);
+
+        if(bRet == true)
+        {
+            System.out.println("Entered charecter is alphabet");
+        }
+        else
+        {
+            System.out.println("Entered charecter is not alphabet");
+        }
         
     }
 }
@@ -41,10 +46,10 @@ class program32_1
 //
 // Logic Functions of Pattern class:
 //
-// Function name:   Display
-// Discription:     Display on screen from A to the count of number alphabet in capital 
-// Input:           Integer
-// Output:          None
+// Function name:   ChkAlpha
+// Discription:     check if given charecter is alphabet or not 
+// Input:           char
+// Output:          boolean
 //
 // Author:          Rushikesh Vinod Gunthe
 // Date:            25/11/2025
@@ -53,32 +58,9 @@ class program32_1
 
 class Pattern 
 {
-    public void Display(int iRow, int iCol)
+    public boolean ChkAlpha(char ch)
     {
-        int i = 0, j = 0;
-        if(iCol == iRow)
-        {
-            for(i = 1; i <= iRow; i++)
-            {
-                for(j = 1; j <= iCol; j++)
-                {
-
-                    if(j == (iCol+1) - i)
-                    {
-                        System.out.print("#\t");
-                    }
-                    else
-                    {
-                        System.out.print("*\t");
-                    }
-                }
-                System.out.println();
-            }
-        }
-        else
-        {
-            System.out.println("Both number entered should be equal.");
-        }
+        return (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z');
         
     }
 }
