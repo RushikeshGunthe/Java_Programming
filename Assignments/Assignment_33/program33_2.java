@@ -1,0 +1,66 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required Packages
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Input:   char
+// Output:  Boolean
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.*;
+
+
+class program33_2
+{
+
+    public static void main(String args[]) 
+    {
+        boolean bRet;
+        
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter a character: ");
+        char ch = sobj.next().charAt(0);
+        
+        Pattern pobj = new Pattern();
+
+        bRet = pobj.ChkCapital(ch);
+
+        if(bRet == true)
+        {
+            System.out.println("Entered charecter is Capital alphabet");
+        }
+        else
+        {
+            System.out.println("Entered charecter is not Capital alphabet");
+        }
+        
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Class name:      Pattern
+//
+// Logic Functions of Pattern class:
+//
+// Function name:   ChkCapital
+// Discription:     check if given charecter is Capital or not 
+// Input:           char
+// Output:          boolean
+//
+// Author:          Rushikesh Vinod Gunthe
+// Date:            25/11/2025
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Pattern 
+{
+    public boolean ChkCapital(char ch)
+    {
+        return (ch >= 'A' && ch <= 'Z');
+        
+    }
+}
