@@ -3,47 +3,31 @@
 //  Required Packages
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 
-// Input:   iRow = 4     iCol = 4
-// Output:  *   *   *   #
-//          *   *   #   *
-//          *   #   *   *
-//          #   *   *   *
-// 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 import java.util.*;
 
 
-class program32_1
+class program34_1
 {
 
     public static void main(String args[]) 
     {
-        int iValue1 = 0, iValue2 = 0;
-        Scanner sobj = new Scanner(System.in);
+        ASCIITable aobj = new ASCIITable();
 
-        System.out.println("Enter number of Rows: ");
-        iValue1 = sobj.nextInt();
-        
-        System.out.println("Enter number of Columns: ");
-        iValue2 = sobj.nextInt();
-
-        Pattern pobj = new Pattern();
-        pobj.Display(iValue1, iValue2);
-        
+        aobj.DisplayASCII();   
     }
 }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// Class name:      Pattern
+// Class name:      ASCIITable
 //
 // Logic Functions of Pattern class:
 //
-// Function name:   Display
-// Discription:     Display on screen from A to the count of number alphabet in capital 
-// Input:           Integer
+// Function name:   DisplayASCII
+// Discription:     Display on screen from 0 to 255 full ASCII table 
+// Input:           None
 // Output:          None
 //
 // Author:          Rushikesh Vinod Gunthe
@@ -51,34 +35,31 @@ class program32_1
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-class Pattern 
+class ASCIITable 
 {
-    public void Display(int iRow, int iCol)
+    public void DisplayASCII()
     {
-        int i = 0, j = 0;
-        if(iCol == iRow)
-        {
-            for(i = 1; i <= iRow; i++)
-            {
-                for(j = 1; j <= iCol; j++)
-                {
+        System.out.printf("%-10s %-10s %-15s %-10s%n", "DECIMAL", "CHAR", "HEXADECIMAL", "OCTAL");
 
-                    if(j == (iCol+1) - i)
-                    {
-                        System.out.print("#\t");
-                    }
-                    else
-                    {
-                        System.out.print("*\t");
-                    }
-                }
-                System.out.println();
-            }
-        }
-        else
+        System.out.println("-----------------------------------------------------");
+
+        for(int i = 0; i <= 255; i++)
         {
-            System.out.println("Both number entered should be equal.");
+            char ch = (char)i;
+
+            String displayChar;
+
+            if(Character.isISOControl(ch))
+            {
+                displayChar = " ";
+            }
+            else
+            {
+                displayChar = String.valueOf(ch);
+            }
+
+            System.out.printf("%-10d %-10s %-15s %-10s%n", i, displayChar, Integer.toHexString(i).toUpperCase(), Integer.toOctalString(i));
+
         }
-        
     }
 }
