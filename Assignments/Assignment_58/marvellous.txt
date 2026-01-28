@@ -1,0 +1,18 @@
+-----  Name : demo.txt ---- Size : 55 -----
+hello,
+India is my country.Jay Ganesh...
+Marvellous
+
+
+-----  Name : hello.txt ---- Size : 55 -----
+hello,
+India is my country.Jay Ganesh...
+Marvellous
+
+
+-----  Name : marvellous.txt ---- Size : 25 -----
+Rest In Peace Ajit dada. 
+
+-----  Name : rg.txt ---- Size : 9 -----
+abcdefghi
+
